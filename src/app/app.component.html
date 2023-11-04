@@ -1,4 +1,66 @@
 <div class="container">
-  <div class="upper-data"></div>
+  <div class="upper-data">
+    <img src="./resource/hot1.jpg" *ngIf="14 > 15" >
+    <img src="assets/cold1.jpg" *ngIf="14 <= 15">
+  
+    <div class="weather-data">
+      <div class="location">Kandana</div>
+      <div class="temperature">{{14.40| number: '1.0-0'}}°C</div>
+    </div>
+  </div>
+  
+  <div class="lower-data">
+    <div class="more-info-label">
+      More Information
+    </div>
+    <div class="more-info-container">
+      
+      <!-- info block 1 -->
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="assets/cold_temp.png" >
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          10°C
+        </div>
+      </div>
+      
+
+      <!-- info block 2 -->
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="assets/hot_temp.png" >
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          30°C
+        </div>
+      </div>
+
+      <!-- info block 3 -->
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="assets/cold_temp.png" >
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          77%
+        </div>
+      </div>
+
+      <!-- info block 4 -->
+      <div class="info-block">
+        <div class="info-block-label">
+          <img src="assets/cold_temp.png" >
+          <span>Wind</span>
+        </div>
+        <div class="info-block-value">
+          11km/h
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 <router-outlet></router-outlet>
